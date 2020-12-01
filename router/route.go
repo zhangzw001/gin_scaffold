@@ -81,6 +81,7 @@ func InitRouter(middlewares ...gin.HandlerFunc) *gin.Engine {
 		controller.DemoRegister(v1)
 	}
 
+
 	//非登陆接口
 	store := sessions.NewCookieStore([]byte("secret"))
 	apiNormalGroup := router.Group("/api")
